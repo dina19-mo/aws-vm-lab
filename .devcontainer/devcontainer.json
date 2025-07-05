@@ -1,0 +1,11 @@
+{
+  "name": "AWS Cloud VM",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "VARIANT": "ubuntu-22.04"
+    }
+  },
+  "postCreateCommand": "aws --version",
+  "remoteUser": "vscode"
+}
